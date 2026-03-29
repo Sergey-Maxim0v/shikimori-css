@@ -18,6 +18,5 @@ yarn-error.log*
 # Optional npm cache directory
 .npm
 
-# Environment variables
 .env
 .env.local

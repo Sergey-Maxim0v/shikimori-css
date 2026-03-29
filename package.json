@@ -7,11 +7,14 @@
   "main": "index.js",
   "scripts": {
     "build:sass": "sass src/scss/main.scss dist/main.css --no-source-map",
-    "prefix": "postcss dist/css/main.css --use autoprefixer --output dist/main.css",
-    "minify": "postcss dist/css/main.css --use cssnano --output dist/main.min.css",
+    "prefix": "postcss dist/main.css --use autoprefixer --output dist/main.css",
+    "minify": "postcss dist/main.css --use cssnano --output dist/main.min.css",
     "build": "npm-run-all build:sass prefix minify"
   },
-  "keywords": ["shikimori", "css"],
+  "keywords": [
+    "shikimori",
+    "css"
+  ],
   "author": "Sergey-Maxim0v",
   "license": "ISC",
   "devDependencies": {

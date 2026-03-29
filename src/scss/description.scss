@@ -1,0 +1,47 @@
+@use "abstracts/_colors" as *;
+
+/* ссылка в описании */
+.b-catalog_entry-tooltip .inner .line .key {
+  color: $color-violet-dark-3;
+}
+
+/* заголовок описания */
+.b-tag[href] {
+  background-color: transparent;
+  color: $color-violet-dark-3;
+  border-bottom-color: $color-violet-medium-4;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.b-tag.active[href], .b-tag[href]:hover {
+  background-color: $color-violet-medium-4;
+  color: $color-white
+}
+
+/* текст описаний */
+h2, h3, h4 {
+  color: $color-violet-dark-3;
+}
+
+.b-text_with_paragraphs {
+  color: $color-violet-dark-3;
+}
+
+.b-catalog_entry .cover .title {
+  color: $color-violet-dark-3;
+}
+
+.b-catalog_entry .cover .misc {
+  color: $color-violet-dark-3;
+}
+
+@media screen and (min-width: 1024px) {
+  .b-catalog_entry .cover .title:hover {
+    color: $color-violet-medium-4;
+  }
+}
+
+/* автор */
+.b-source .contributors .key, .b-source .mal .key, .b-source .source .key {
+  color: $color-violet-dark-5;
+}

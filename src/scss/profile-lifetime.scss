@@ -1,0 +1,24 @@
+@use "abstracts/_colors" as *;
+
+.profile-content .block .b-stats_bar {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.b-stats_bar.lifetime .bar {
+  .first {
+    background-color: $color-violet-medium-3;
+  }
+
+  .third {
+    background-color: $color-violet-light-1;
+  }
+}
+
+.b-tooltipped.dotted {
+  border-color: $color-violet-medium-4;
+}
+
+.p-profiles-show .lifetime .times .time.checked {
+  color: $color-violet-medium-5;
+}

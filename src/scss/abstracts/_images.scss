@@ -1,0 +1,36 @@
+@use 'sass:map';
+
+/* Картинки фона */
+$images: (
+        '1': "https://shikimori.one/system/user_images_h/original/c092fcac6e3f34341f8368af/f717e9637ed4b2dc191b45dcfd530f0acdd65b66db765c7c8239305bce05579e.jpg", /* Маленький гражданин */
+        '2': "https://shikimori.one/system/user_images/original/755522/1920358.jpg", /* Песнь ночных сов */
+        '3': "https://shikimori.one/system/screenshots/original/5a8cab400d9ac596c9241634d7e7da0607218373.jpg?1515868405", /* Милый во франксе */
+        '4': "https://shikimori.one/system/screenshots/original/003eef36de64f8dfea0284d35ba6954d2258a825.jpg?1664559997", /* Дюрарара */
+        '5': "https://shikimori.one/system/screenshots/original/529feaf72ae231ee04ec780dbbdd0426d81a5a35.jpg?1767808073", /* Смертельная игра ради еды на столе */
+        '6': "https://shikimori.one/system/screenshots/original/87a1e1d59ffbc9bf986300a225900d55060fb869.jpg?1766256279", /* Человек-бензопила: Резе */
+        '7': "https://shikimori.one/system/screenshots/original/eaaa94c43c569687a6e5d3d3f377468237a83cc3.jpg?1668171571", /* Лагерь на свежем воздухе */
+        '8': "https://shikimori.one/system/screenshots/original/c1112fd0118539c02f990f164685b083cb6fcd2e.jpg?1666467351", /* 86 */
+        '9': "https://shikimori.one/system/screenshots/original/0b763b481e1b13dfc9e3ad538846253637832ec3.jpg?1633626236", /* K-on! */
+        '10': "https://shikimori.one/system/user_images/original/657626/1020083.jpg", /* Чудовище за соседней партой */
+        '11': "https://shikimori.one/system/screenshots/original/794797a3fcea80223252800b44ace6eed9b4a1e3.jpg?1696000701", /* Провожающая в последний путь Фрирен */
+        '12': "https://shikimori.one/system/screenshots/original/b999ec5b1c273cf71059690bffbe014257853c0a.jpg?1605197438", /* История кошки: Чёрная глава */
+        '13': "https://shikimori.one/system/screenshots/original/85174afe824e3d6a4453e88ebdc2e42b2d6e97d5.jpg?1633466857", /* Вайолет Эвергарден */
+        '14': "https://shikimori.one/system/user_images/original/542847/1195813.jpg", /* Сага о Винланде */
+        '15': "https://shikimori.one/system/screenshots/original/1183f09cdf4820fcd426e7167cc0b227ff60b88e.jpg?1631913070", /* Звучи, эуфониум! */
+        '16': "https://shikimori.one/system/screenshots/original/e896e0ebe91600991def008faf4335f9f7c8cadb.jpg?1630924253", /* Звучи, эуфониум! */
+        '17': "https://shikimori.one/system/user_images/original/167713/678620.jpg", /* Монстр */
+        '18': "https://shikimori.one/system/screenshots/original/94d87ade57e1f8bac64bbb61b3b723ae3e824f95.jpg?1423539683", /* K-on! */
+        '19': "https://shikimori.one/system/screenshots/original/00276235452d17d147a2b2037636309e422194cc.png?1561964264", /* Re:Zero */
+        '20': "https://shikimori.one/system/user_images_h/original/303d16029e55208f73cd9e5b/918fe78581660e2003a646477cc82fb9cdc56729957421322746bd35d75a167d.jpg" /* Рок — женская скромность */
+);
+
+@function get-anime-image($id) {
+  $key: "#{$id}";
+
+  @if not map.has-key($images, "#{$key}") {
+    @error "Изображение '#{$id}' не найдено в списке.";
+  }
+  @return url(map.get($images, "#{$key}"));
+}
+
+;

@@ -1,0 +1,169 @@
+@use "abstracts/_colors" as *;
+
+.p-user_rates-index .list-lines tr td .ongoing {
+  color: $color-violet-medium-3;
+}
+
+.b-block_list li.selected,
+.b-block_list li:hover,
+.p-user_rates-index .list-lines .selectable:hover {
+  transition: background-color 0.2s;
+  background-color: $color-violet-light-1;
+}
+
+.b-question:before {
+  background-color: $color-violet-medium-2;
+}
+
+.b-collection_search .field input,
+.collapsed {
+  border: 1px solid $color-violet-dark-1-03;
+  background-color: $color-violet-light-1;
+  transition: background-color 0.2s;
+}
+
+.b-collection_search .field input:focus,
+.b-collection_search .field input:hover,
+.collapsed:hover {
+  border: 1px solid $color-violet-dark-1-03;
+  background-color: $color-white;
+}
+
+.b-collection_search .field input::placeholder {
+  color: $color-violet-dark-1-05;
+}
+
+/* заголовки */
+.p-profiles {
+  .subheadline {
+    background-color: $color-violet-dark-3-09;
+    color: $color-white;
+  }
+
+  .headline {
+    background-color: $color-violet-dark-3-09 !important;
+    color: $color-white;
+    border-left: none;
+
+    .misc-links a {
+      color: $color-white;
+    }
+  }
+
+  .subheadline a {
+    color: $color-white;
+
+    &:hover {
+      color: $color-violet-medium-1;
+
+      &:before {
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* плашка спойлер */
+.b-spoiler_block > span {
+  background-color: $color-violet-medium-3;
+  border: 1px solid $color-violet-medium-3;
+  color: $color-violet-light-1;
+  transition: border-color 0.2s;
+}
+
+.b-spoiler_block > div {
+  background-color: $color-violet-light-1;
+  border-color: $color-violet-medium-3;
+}
+
+@media screen and (min-width: 1024px) {
+  .b-spoiler_block > span:hover {
+    background-color: $color-violet-medium-3;
+    border: 1px solid $color-violet-medium-4;
+  }
+}
+
+/* плашка вышло, выходит */
+.b-anime_status_tag.released,
+.b-anime_status_tag.ongoing {
+  background-color: $color-violet-medium-3;
+  border: 1px solid $color-violet-medium-3;
+  color: $color-violet-light-1;
+}
+
+/* кнопка сохранить */
+.b-form input[type=submit] {
+  background-color: $color-violet-medium-3;
+  border: 1px solid $color-violet-medium-3;
+  color: $color-violet-light-1;
+}
+
+@media screen and (min-width: 1024px) {
+  .b-form input[type=submit]:hover {
+    background-color: $color-violet-medium-3;
+    border: 1px solid $color-violet-medium-4;
+  }
+}
+
+/* stars */
+.b-rate {
+  .stars {
+    &.score {
+      color: $color-violet-medium-4;
+    }
+
+    &.background {
+      color: $color-violet-light-1;
+    }
+
+    &.hover {
+      color: $color-violet-medium-4;
+    }
+  }
+
+  .text-score,
+  .score-notice {
+    color: $color-violet-dark-3;
+  }
+}
+
+/* заголовки */
+.cc-related-authors .b-options-floated a,
+.c-authors .subheadline > a,
+.cc-characters .subheadline > a,
+.c-screenshots .subheadline > a,
+.c-videos .subheadline > a {
+  color: $color-violet-dark-3;
+}
+
+@media screen and (min-width: 1024px) {
+  .cc-related-authors .b-options-floated a:hover,
+  .c-authors .subheadline > a:hover,
+  .c-authors .subheadline > a:hover:before,
+  .cc-characters .subheadline > a:hover,
+  .cc-characters .subheadline > a:hover:before,
+  .c-screenshots .subheadline > a:hover,
+  .c-screenshots .subheadline > a:hover:before,
+  .c-videos .subheadline > a:hover,
+  .c-videos .subheadline > a:hover:before {
+    color: $color-violet-medium-5;
+  }
+}
+
+/* ссылки в заголовках */
+.b-options-floated a,
+.b-options-floated span.action,
+.subheadline-buttons .b-list_switchers span.switcher {
+  color: $color-white;
+}
+
+@media screen and (min-width: 1024px) {
+  .b-options-floated a:hover,
+  .b-options-floated a.selected,
+  .b-options-floated a.selected:hover,
+  .b-options-floated span.action:hover,
+  .subheadline-buttons .b-list_switchers span.switcher:hover,
+  .subheadline-buttons .b-list_switchers span.switcher.selected {
+    color: $color-violet-medium-6;
+  }
+}

@@ -1,0 +1,63 @@
+@use "abstracts/_colors" as *;
+
+.p-profiles-show .profile-content .block .activity {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.bar.vertical .line .x_label {
+  color: $color-violet-medium-5;
+}
+
+/* line */
+.p-profiles-show .profile-content .block .activity .line .bar-container .bar {
+  animation: activity 3s ease-in-out infinite;
+  border-radius: 0.8rem 0.8rem 0 0;
+  width: 80%;
+}
+
+.bar.simple .bar {
+  &.s0 {
+    background-color: $color-violet-medium-1;
+  }
+
+  &.s1 {
+    background-color: $color-violet-medium-2;
+  }
+
+  &.s2 {
+    background-color: $color-violet-medium-3;
+  }
+
+  &.s3 {
+    background-color: $color-violet-medium-4;
+  }
+
+  &s0, &s1, &s2, &s3 {
+    transition: background-color 0.2s;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bar.simple .bar {
+    &.s0, &.s1, &.s2, &.s3,  {
+      &:hover {
+        background-color: $color-violet-medium-5;
+      }
+    }
+  }
+}
+
+.p-profiles-show .profile-content .block .activity .line {
+  @for $i from 1 through 10 {
+    &:nth-child(6n + #{$i}) .bar-container .bar {
+      animation-delay: #{(($i - 1) * 0.3)}s;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-profiles-show .profile-content .block .activity .line .bar-container .bar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+@use "abstracts/_colors" as *;
+
+/* иконки действий на странице персонажа */
+.b-subposter-action {
+  color: $color-violet-dark-3;
+
+  &.fav-remove {
+    color: $color-violet-medium-3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .b-subposter-action {
+    &:hover,
+    &.fav-remove:hover {
+      color: $color-violet-medium-4;
+    }
+  }
+}

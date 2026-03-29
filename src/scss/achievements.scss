@@ -1,0 +1,15 @@
+@use "abstracts/_colors" as *;
+
+/* ачивки */
+.b-achievement .c-about .progress,
+.b-achievement .about .progress {
+  background-color: $color-violet-light-1;
+
+  .bar {
+    background-color: $color-violet-medium-3;
+  }
+
+  .hint {
+    color: $color-violet-medium-3;
+  }
+}

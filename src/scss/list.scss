@@ -1,0 +1,7 @@
+@use "abstracts/_colors" as *;
+
+/* разворот тайтла на странице списка */
+.p-user_rates-index .list-lines tr.edit-form form {
+  background-color: $color-violet-light-1;
+  border-color: $color-violet-dark-1-03;
+}

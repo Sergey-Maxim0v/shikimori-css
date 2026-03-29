@@ -1,0 +1,78 @@
+@use 'images' as img;
+
+@keyframes rotate90 {
+  to {
+    transform: rotate(90deg)
+  }
+}
+
+;
+
+@keyframes bgReel {
+  @for $i from 1 through 20 {
+    $start: ($i - 1) * 5; // 0%, 5%, 10%...
+    $end: $start + 4;     // 4%, 9%, 14%...
+
+    #{$start}%, #{$end}% {
+      background-image: img.get-anime-image('#{$i}');
+    }
+  }
+  100% {
+    background-image: img.get-anime-image('1');
+  }
+}
+
+@keyframes bgFlicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.95;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+;
+
+@keyframes brief {
+  0%, 100% {
+    background-position: 0 20%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+}
+
+;
+
+@keyframes activity {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+}

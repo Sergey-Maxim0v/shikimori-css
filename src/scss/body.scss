@@ -1,0 +1,12 @@
+@use 'abstracts/_colors' as *;
+
+body {
+  background: $color-violet-dark-3; /* BODY BACKGROUND */
+}
+
+.l-page {
+  background-color: $color-violet-light-1-09; /* PAGE BACKGROUND */
+
+  outline: 1.25rem solid $color-violet-light-1-03; /* PAGE BORDER */
+  margin-bottom: 1.25rem;
+}

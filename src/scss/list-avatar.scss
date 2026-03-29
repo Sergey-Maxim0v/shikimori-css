@@ -1,0 +1,16 @@
+@use "abstracts/_colors" as *;
+
+/* аватар страницы списка */
+.p-user_rates-index .l-menu .block.avatar,
+.p-user_rates-index .l-menu .block.avatar center {
+  width: 100%;
+  height: auto;
+}
+
+.p-user_rates-index .l-menu .block.avatar center img {
+  width: calc(100% - 1rem);
+}
+
+.p-user_rates-index .l-menu .avatar img {
+  box-shadow: $shadow-pagelist-avatar;
+}

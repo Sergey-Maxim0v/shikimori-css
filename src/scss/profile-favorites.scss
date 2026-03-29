@@ -1,0 +1,26 @@
+/* FAVOURITES */
+.profile-content .block:nth-child(1) .c-column.c-right > div:nth-child(2) {
+  width: 100%;
+
+  .cc-favourites {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    & > * {
+      margin: 0.5rem;
+      width: 120px;
+      max-width: calc(30vw - 1.5rem);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-content .block:nth-child(1) .c-column.c-right > div:nth-child(2) .cc-favourites > * {
+    max-width: calc(30vw - 1.5rem);
+    max-height: 120px;
+  }
+}

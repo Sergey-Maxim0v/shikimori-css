@@ -1,0 +1,52 @@
+@use "abstracts/_colors" as *;
+
+/* цвета ссылок */
+a,
+a.next,
+a.b-link,
+.b-spoiler label,
+.p-user_rates-index .stat-categories .category,
+.b-options-floated.mobile-desktop a,
+.b-block_list li,
+.b-block_list li.selected,
+.item-add,
+.p-user_rates-index .list-lines tr .name a,
+.p-user_rates-index .l-content .order-control,
+.p-user_rates-index .list-groups .summary.lines,
+header.head a.misc, header.head a.edit,
+header.head h1 a.back, header.head h2 a.back,
+.b-db_entry > .c-about .additional-links .line-container > .link,
+.b-db_entry > .c-about .additional-links .line-container > a,
+.b-achievement .c-about a.title, .b-achievement .about a.title,
+.b-stats_bar a.title,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
+.p-animes_collection-index .pagination .link {
+  color: $color-violet-dark-3;
+}
+
+@media screen and (min-width: 1024px) {
+  a:hover,
+  a.next:hover,
+  a.b-link:hover,
+  .b-spoiler label:hover,
+  .b-options-floated.mobile-desktop a:hover,
+  .p-user_rates-index .stat-categories .category:hover,
+  .b-block_list li:hover,
+  .item-add:hover,
+  .p-user_rates-index .list-lines tr .name a:hover,
+  .p-user_rates-index .l-content .order-control:hover,
+  header.head a.misc:hover, header.head a.edit:hover,
+  header.head h1 a.back:hover, header.head h2 a.back:hover,
+  .b-db_entry > .c-about .additional-links .line-container > .link:hover,
+  .b-db_entry > .c-about .additional-links .line-container > a:hover,
+  .b-catalog_entry .cover:hover,
+  .b-catalog_entry .cover:hover .title,
+  .b-achievement .c-about a.title:hover,
+  .b-achievement .about a.title:hover,
+  .b-stats_bar a.title:hover,
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a:hover,
+  .b-stats_bar .stat_names .stat_name a:hover,
+  .p-animes_collection-index .pagination .link:hover {
+    color: $color-violet-medium-5;
+  }
+}

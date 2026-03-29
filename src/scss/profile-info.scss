@@ -1,0 +1,43 @@
+.p-profiles .profile-head .c-info {
+  margin: 0;
+  width: 100%;
+}
+
+.c-lists-info {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  .b-stats_bar {
+    margin: 0 1rem 0;
+    width: calc(50% - 2rem);
+
+    .bar {
+      margin: 0.2rem 0;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .c-lists-info {
+    display: block;
+
+    .b-stats_bar {
+      margin: 0 0 1rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .c-lists-info .b-stats_bar .bar {
+    height: 1rem;
+
+    div {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

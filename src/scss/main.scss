@@ -1,17 +1,20 @@
-body {
-  background: #f0f0f0;
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-
-    h1 {
-      font-size: 24px;
-      transform: rotate(5deg);
-
-      @media (max-width: 768px) {
-        font-size: 18px;
-      }
-    }
-  }
-}
+@use 'achievements';
+@use 'body';
+@use 'character-actions';
+@use 'description';
+@use 'feedback-btn';
+@use 'header';
+@use 'links';
+@use 'list';
+@use 'list-avatar';
+@use 'profile-activity';
+@use 'profile-brief';
+@use 'profile-content';
+@use 'profile-favorites';
+@use 'profile-friends-clubs';
+@use 'profile-head';
+@use 'profile-history';
+@use 'profile-info';
+@use 'profile-lifetime';
+@use 'shared';
+@use 'tooltip';
