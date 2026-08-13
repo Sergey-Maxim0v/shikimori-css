@@ -45,3 +45,13 @@ h2, h3, h4 {
 .b-source .contributors .key, .b-source .mal .key, .b-source .source .key {
   color: $color-violet-dark-5;
 }
+
+/* рейтинг на карточке анимэ */
+.collection_score {
+  background-color: $color-violet-dark-1-05;
+  color: $color-violet-light-1;
+
+  .score_marker_star {
+    color: inherit;
+  }
+}
